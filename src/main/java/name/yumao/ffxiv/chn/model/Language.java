@@ -44,6 +44,14 @@ public enum Language {
 		} 
 		return "0";
 	}
+
+	public static String toName(String lang) {
+		for (Language langs : values()) {
+			if (langs.lang.equals(lang))
+				return langs.name; 
+		} 
+		return "日文";
+	}
 	
 	public static void main(String[] args) {
 		System.out.println(toLang("正體中文"));

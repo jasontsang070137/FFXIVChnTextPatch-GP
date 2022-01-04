@@ -285,6 +285,20 @@ public class ConfigApplicationPanel extends JFrame implements ActionListener {
 		this.exitButton.setFocusable(false);
 		this.exitButton.addActionListener(this);
 		add(this.exitButton, 0);
+
+		// Get and show current settings
+		String curGamepath = Config.getProperty("GamePath");
+		if (curGamepath != null) {
+			String curFlang = Config.getProperty("FLanguage");
+			String curSlang = Config.getProperty("SLanguage");
+			String curDlang = Config.getProperty("DLanguage");
+			this.pathField.setText(curGamepath);
+			this.fLangLableVal.setSelectedItem(Language.toName(curFlang));
+			this.sLangLableVal.setSelectedItem(Language.toName(curSlang));
+			this.dLangLableVal.setSelectedItem(Language.toName(curDlang));
+		}
+
+
 		setVisible(false);
 		setVisible(true);
 	}
