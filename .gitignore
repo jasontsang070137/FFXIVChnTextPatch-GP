@@ -1,8 +1,10 @@
 /backup/*
 /bin/
 /jre/
-/resource/text/
+/resource/font-4k/
 /resource/rawexd-zhcn/
 /.gradle/
 /build/
-
+/resource/text/
+debug.*
+*.jar
