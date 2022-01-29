@@ -3,4 +3,6 @@
 /jre/
 /resource/text/
 /resource/rawexd-zhcn/
+/.gradle/
+/build/
 
